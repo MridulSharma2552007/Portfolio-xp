@@ -44,4 +44,15 @@ font-weight: normal;
     left: 5%;
     color: white;
 }
-
+.loader{
+    position :absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    margin: 10px;
+    border-radius: 5px ;
+    background-color: transparent;
+    border: 2px solid gainsboro;
+    width: 200px;
+    height: 20px;
+}

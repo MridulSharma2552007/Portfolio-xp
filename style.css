@@ -1,3 +1,37 @@
 body{
     background-color: black;
+    overflow: hidden;
+}
+.Image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.OSText{
+    position :absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: white;
+    font-size: 30px;
+   font-family: Tahoma, Segoe UI, sans-serif;
+
+
+}
+.OSText sup{
+   vertical-align: super;
+    color: sienna;
+    font-family: Tahoma, Segoe UI, sans-serif;
+font-weight: normal;
+}
+.exptext{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    color: white;
 }

@@ -1,3 +1,12 @@
+@keyframes move-loader {
+    0%{
+        transform: translateX(0);}
+        100%{
+            transform: translateX(260px);
+        }
+    }
+
+
 body{
     background-color: black;
     overflow: hidden;
@@ -42,7 +51,7 @@ font-weight: normal;
     position: absolute;
     top: 90%;
     left: 5%;
-    color: white;
+    color: rgb(165, 165, 165);
 }
 .loader{
     position :absolute;
@@ -55,4 +64,22 @@ font-weight: normal;
     border: 2px solid gainsboro;
     width: 200px;
     height: 20px;
+    overflow: hidden;
+}
+.loader-inner{
+  animation: move-loader 2s linear infinite;  /* slower */
+  height: calc(100% - 4px);
+  position: absolute;
+  width: 20px;
+  top: 2px;
+  left: -60px;
+  background-color: slateblue;
+  border-radius: 3px;
+}
+
+.loader-inner:nth-child(2){
+  animation-delay: 0.2s;   /* starts a bit later */
+}
+.loader-inner:nth-child(3){
+  animation-delay: 0.4s;   /* starts even later */
 }

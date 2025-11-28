@@ -29,9 +29,19 @@ body{
     font-family: Tahoma, Segoe UI, sans-serif;
 font-weight: normal;
 }
+.OSText p{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+   
+    font-size: 20px;
+    color: lightgray;
+    font-family: Tahoma, Segoe UI, sans-serif;
+}
 .exptext{
     position: absolute;
     top: 90%;
     left: 5%;
     color: white;
 }
+

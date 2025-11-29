@@ -74,7 +74,7 @@ body{
     position: absolute;
     top: 70%;
     font-size: 20px;
-    color: lightgray;
+    color: rgb(255, 253, 253);
     margin-top: 0px;
 }
 .divider{
@@ -84,4 +84,13 @@ body{
     width: 2px;
     height: 50%;
     background-color: rgb(165, 163, 163);
+}
+.Infotext{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    transform: translate(-42%,-50%);
+    font-family: Tahoma, Segoe UI, sans-serif;
+    color: rgb(179, 175, 175);
+    font-size: 20px;
 }

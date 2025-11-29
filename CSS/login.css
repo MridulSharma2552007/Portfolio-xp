@@ -99,9 +99,10 @@ body{
         to right,
         #032781 0%,
          rgba(3, 39, 129, 0.2) 80%
+         
 
     );
-    
+    cursor: pointer;
     height: 100px;
     width: 400px;
     position: absolute;

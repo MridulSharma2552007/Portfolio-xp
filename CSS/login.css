@@ -1,5 +1,6 @@
 body{
     background-color: #032781;
+    overflow: hidden;
 }
 .panel{
     display: flex;
@@ -13,13 +14,13 @@ body{
 }
 .crt {
     position: relative;
-    min-height: 100vh;   /* fill full screen */
-    color: #e0ffe8;      /* slightly greenish text tint */
+    min-height: 100vh;  
+    color: #e0ffe8;    
 }
 .crt::before {
     content: "";
     position: fixed;
-    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    inset: 0; 
     pointer-events: none;
     background: repeating-linear-gradient(
         to bottom,
@@ -95,13 +96,7 @@ body{
     font-size: 20px;
 }
 .clickable{
-    background: linear-gradient(
-        to right,
-        #032781 0%,
-         rgba(3, 39, 129, 0.2) 80%
-         
-
-    );
+    
     cursor: pointer;
     height: 100px;
     width: 400px;
@@ -109,7 +104,8 @@ body{
     top: 50%;
     left: 65%;
     transform: translate(-50%,-50%);
-    transition: all 0.25 ease;
+    transition: all 0.4s cubic-bezier(.17,.67,.83,.67);
+
 }
 .clickable img{
     position: absolute;
@@ -127,10 +123,60 @@ body{
     position: relative;
     left: 30%;
     top: 30%;
-    color: yellow;
+    color: blue;
 
 }
+.clickable:hover p{
+    color: yellow;
+}
+
 .clickable:hover{
   width: 450px;
+  background: linear-gradient(
+        to right,
+        #032781 0%,
+         rgba(3, 39, 129, 0.2) 50%,
+         #6078BD 100%
+          
+      
+    );
    
+}
+.restart {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+
+    
+}
+.restart img{
+    height: 30px;
+}
+.restart p{
+    padding-top: 5px;
+     position: static;            
+    margin: 0;                     
+    color: white;                  
+    font-family: Tahoma, sans-serif;
+    }
+.restart p:hover{
+    color:gainsboro
+}
+.ran-txt{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.restart img,
+.clickable img,
+.Logostuff img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;   
 }

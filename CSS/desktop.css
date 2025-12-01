@@ -36,5 +36,13 @@ body{
 .start-menu:hover img{
     filter: brightness(1.4) saturate(1.4);
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
-    
+}
+.time-section {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+  
 }

@@ -95,5 +95,5 @@
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 2s infinite;
+  animation: flicker 3s infinite;
 }
